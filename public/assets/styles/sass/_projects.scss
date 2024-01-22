@@ -1,0 +1,181 @@
+.projects, .projects_list{
+    .projects_content{
+        position: relative;
+
+        .projects_body{
+    // @include borderTest(red);
+            display: flex;
+                flex-wrap: wrap;
+                gap: 40px;
+            padding: 50px 0;
+            transition: 300ms;
+            @include Phones_max{
+                gap: 20px;
+            }
+
+            .project_card{
+                // @include borderTest(red);
+                position: relative;
+                @include Dfx_JCsb_AIc;
+                flex-direction: column;
+                @include Phones_max{
+                    margin: auto;
+                }
+
+                
+
+                .card_content{
+                    // @include borderTest(white);
+                    height: 250px;
+                    width: 190px;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border-radius: 15px;
+                    position: relative;
+                    cursor: pointer;
+
+                    .card_modal{
+                        height: 100%;
+                        width: 190px;
+                        position: absolute;
+                            // right: -190px;
+                        background-color: $color_60_opo2;
+                        border-radius: 15px;
+                        opacity: 0;
+                        padding: 10px;
+                        @include Dfx_JCc_AIc;
+                        // flex-direction: column;
+                        font-size: 13px;
+                        font-weight: 100;
+                        line-height: 16px;
+                        letter-spacing: 1px;
+                        color: white;
+                        font-family: 'Roboto Flex', sans-serif;
+
+                        p{
+                            // margin: 5px 0;
+                            font-size: 24px;
+                        }
+                    }
+    
+                    &:hover{
+                        .card_modal{
+                            z-index: +10;
+                            opacity: 1;
+                            transition: 300ms;
+                        }
+                    }
+
+                    .back_shadow{
+                        position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                        background-color: $color_60_opo3;
+                        border-radius: 15px;
+                        z-index: +1;
+                        transition: 300ms;
+                    }
+
+                    .project_img{
+                        // @include borderTest(blue);
+                        height: 100%;
+                        width: 100%;
+                        img{
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+
+                .project_description{
+                    // @include borderTest(blue);
+                    position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                    height: 40%;
+                    color: white;
+                    @include Dfx_JCc_AIc;
+                    flex-direction: column;
+                    h3{
+                        font-size: 1.2rem;
+                        text-shadow: 2px 2px 2px black;
+                    }
+                    p{
+                        color: white;
+                        font-size: 14px;
+                        text-shadow: 2px 2px 2px black;
+                    }
+                }
+
+                .links{
+                    width: 100%;
+                    @include Dfx_JCsa_AIc;
+                }
+                
+                .btn_view_project{
+                    color: white;
+                    border: solid 1px white;
+                    border-radius: 10px;
+                    padding: 5px 20px;
+                    margin: 20px 0;
+                    text-transform: lowercase;
+                    // font-weight: 300;
+
+                    &:hover{
+                        color: $color_10;
+                        border: solid 1px $color_10;
+                    }
+                }
+                
+                .btn_git{
+                    border-radius: 50%;
+                    color: white;
+                    border: solid 1px white;
+                    height: 35px;
+                    width: 35px;
+                    @include Dfx_JCc_AIc;
+    
+                    &:hover{
+                        color: $color_10;
+                        border: solid 1px $color_10;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+#projects{
+    .projects_content{
+        .content_title{
+            // @include borderTest(red);
+            @include Dfx_JCsb_AIc;
+
+            a{
+                font-size: 16px;
+                color: $color_20;
+                align-self: flex-end;
+                @include Phones_max{
+                    font-size: 14px;
+                }
+
+                &:hover{
+                    color: $color_10;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+

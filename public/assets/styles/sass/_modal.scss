@@ -1,0 +1,238 @@
+$duration: 600ms;
+
+#modal, 
+#modal_project{
+    // @include borderTest(red);
+    backdrop-filter: blur(10px);
+    position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    overflow: hidden;
+
+    // @include Laptops_max{
+    //     position: sticky
+    // };
+
+    .body_modal{
+        // @include borderTest(red);
+        position: relative;
+        border-radius: 15px;
+        margin: 0 auto;
+        max-width: 1440px;
+        height: 100vh;
+        @include Dfx_JCc_AIc;
+
+        .bloc{
+            // @include borderTest(red);
+            position: relative;
+            // padding: 100px 20px 20px;
+            border-radius: 15px;
+            height: 80vh;
+            width: 80vw;
+            @include Dfx_JCc_AIc;
+        }
+    }
+}
+
+
+// contenue modal contact
+#modal .bloc{
+    background-color: $color_10_opo;
+}
+.modal_contact{
+    // @include borderTest(red);
+    @include Dfx_JCc_AIc;
+    ul{
+        // @include borderTest(green);
+        li{
+            // @include borderTest(white);
+            // cursor: pointer;
+            @include Dfx_JCfs_AIc;
+            a{
+                // @include borderTest(blue);
+                @include Dfx_JCfs_AIc;
+                width: 100%;
+                text-decoration: underline;
+                font-weight: 400;
+            }
+            a,i{
+                padding: 5px 10px;
+                font-size: 1.5rem;
+                color: $color_20;
+            }
+            i{
+                // @include borderTest(red);
+                text-align: center;
+                width: 60px;
+            }
+            &:hover i, &:hover a{
+                color: $color_60;
+                transition: 0.5s;
+            }
+        }
+    }
+}
+
+
+// contenue modal project
+#modal_project .bloc{
+    background-color: $color_60_opo;
+}
+.modal_project_content{
+    // @include borderTest(red);
+    max-width: 900px;
+    height: 100%;
+    padding: 5% 10%;
+    @include Dfx_JCc_AIc;
+    flex-direction: column;
+
+    .title{
+        align-self: flex-start;
+        @include Phones_max{
+            align-self: center;
+            margin-bottom: 20px;
+        }
+    }
+
+    // .content_right_description{
+    //     @include borderTest(red);
+    // }
+
+    .modal_project_infos{
+        // @include borderTest(green);
+        height: 100%;
+        width: 100%;
+        overflow-y: auto;
+        // align-self: flex-start;
+        @include Dfx_JCsb_AIc;
+        @include Phones_max{
+            justify-content: flex-start;
+            flex-direction: column;
+        }
+
+        .content_right{
+            // @include borderTest(white);
+            padding: 20px 20px 20px 40px;
+            width: 60%;
+            // align-self: flex-start;
+            @include Phones_max{
+                width: 80%;
+                padding: 20px 20px 20px 20px;
+            }
+
+            p{
+                letter-spacing: 1px;
+                padding: 0 0 10px 0;
+                line-height: 1;
+            }
+        }
+    }
+
+    .modal_project_bloc_img{
+        // @include borderTest(white);
+        position: relative;
+        height: 80%;
+        width: 40%;
+
+        &:hover{
+            opacity: 0.5;
+        }
+        @include Phones_max{
+            height: 50%;
+            width: 50%;
+            margin-bottom: 20px;
+        }
+
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    // .content_right_description{
+        // @include borderTest(white);
+    // }
+
+    .technos ul{
+        @include Dfx_JCfs_AIc;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding-top: 20px;
+        
+        li{
+            background-color: white;
+            color: $color_60;
+            padding: 5px 15px;
+            border-radius: 10px;
+            font-weight: 500;
+        }
+    }
+}
+
+
+.modal_active{
+    animation-name: modal-on;
+    animation-duration: $duration;
+    animation-timing-function: ease-in-out;
+    transition: $duration;
+    height: 100vh;
+    width: 100%;
+}
+.modal_desactive{
+    animation-name: modal-off;
+    animation-duration: $duration;
+    animation-timing-function: ease-in-out;
+    transition: $duration;
+    height: 0;
+    width: 0;
+}
+
+@keyframes modal-on {
+    0%{
+        border-radius: 0 50% 50% 50%;
+        // opacity: 0;
+    }
+    100%{
+        // opacity: 1;
+        border-radius: 0 0 0 0;
+    }
+}
+
+@keyframes modal-off {
+    0%{
+        // opacity: 1;
+        border-radius: 0 0 0 0;
+    }
+    100%{
+        // opacity: 0;
+        border-radius: 0 50% 50% 50%;
+    }
+}
+
+// BTN OFF MODAL
+.btn_modal_off,
+.btn_modal_project_off{
+    position: absolute;
+        top: 10px;
+        right: 10px;
+    z-index: 15;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 4px;
+    @include Dfx_JCc_AIc;
+
+    i{
+        color: $color_20;
+        margin: auto;
+        font-size: 2rem;
+        transition: 400ms;
+    }
+
+    &:hover i{
+        color: $color_10;
+    }
+}
+
+

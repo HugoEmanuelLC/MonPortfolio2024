@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="./public/assets/images/partage-photo.png" />
+    <link rel="icon" type="image/png" href="./public/assets/images/partage-photo.png"/>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- LIBRARY JQUERY -->
+    <script type="text/javascript" src="src/jquery/jquery.min.js"></script>
+    <!-- ICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="public/assets/styles/style.css">
+    <title>Home | Portfolio</title>
+</head>
+
+<body id="home">
+    <!-- ANIMATION OPEN LOAD -->
+    <!-- <div class="open_load">
+        <h1 class="titre">welcome</h1>
+    </div> -->
+    <!-- ANIMATION OPEN -->
+    <div class="animation_open active_animation_open"></div>
+
+    <div id="page">
+        <!-- MODAL -->
+        <div id="modal" class="modal_desactive">
+            <div class="body_modal">
+                <a class="btn_modal_off">
+                    <i class='bx bx-x'></i>
+                </a>
+                <div class="bloc">
+                    <!-- content -->
+                    <div class="modal_contact">
+                        <ul>
+                            <li>
+                                <i class='bx bxl-github'></i> &nbsp; &nbsp;  
+                                <a href="https://github.com/HugoEmanuelLC/" target="_blank">GitHub</a>
+                            </li>
+
+                            <li>
+                                <i class="fa-brands fa-linkedin-in"></i> &nbsp; &nbsp;  
+                                <a href="https://www.linkedin.com/in/hugoclavinas" target="_blank">Linkedin.com</a>
+                            </li>
+
+                            <li>
+                                <i class="fa-regular fa-file-pdf"></i> &nbsp; &nbsp; 
+                                <a href="./src/documents/CV-2024-hugoclavinas.pdf" target="_blank">Voir C.V.</a>
+                            </li>
+
+                            <li>
+                                <i class="fa-regular fa-envelope"></i> &nbsp; &nbsp;  
+                                <a href="mailto:hugoclavinas@gmail.com" target="_blank">hugoclavinas@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- MODAL PROJECTS -->
+        <div id="modal_project" class="modal_desactive">
+            <div class="body_modal">
+                <a class="btn_modal_project_off">
+                    <i class='bx bx-x'></i>
+                </a>
+                <div class="bloc">
+                    <!-- content -->
+                    <div class="modal_project_content">
+                        <h3 class="title"></h3>
+                        <div class="modal_project_infos">
+                            <a title="Voir projet" class="modal_project_bloc_img" href="" target="_blank">
+                                <img src="" alt="">
+                            </a>
+                            <div class="content_right">
+                                <div class="content_right_description"></div>
+                                <div class="technos">
+                                    <ul></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="back_shadow_page">
+            <header data-aos="fade-up">
+                <input type="checkbox" name="btn_navbar_on" id="btn_navbar_on">
+                <label for="btn_navbar_on"><i class='bx bx-menu'></i></label>
+    
+                <div class="header_content">
+                    <div class="photo_profil_logo">
+                        <img src="https://media.licdn.com/dms/image/D4E03AQF3H8eetH_n0w/profile-displayphoto-shrink_800_800/0/1669641183201?e=1710374400&v=beta&t=BkQqtYMDeE3vjZqrURmgW7bri5hHUkaQ_7EPi_PSFbM" alt="">
+                    </div>
+    
+                    <nav>
+                        <ul class="nav_list">
+                            <li class="nav_item">
+                                <a href="/" class="nav_link">
+                                <span class="material-symbols-outlined">home</span>
+                                &nbsp; &nbsp; accueil</a>
+                            </li>
+
+                            <li class="nav_item"><a href="#/Allprojects" class="btn_active_animation_open nav_link btn_page_allprojects_on">
+                                <span class="material-symbols-outlined">
+                                    work
+                                </span>
+                                &nbsp; &nbsp; projets</a>
+                            </li>
+
+                            <li class="nav_item"><a href="#/about" class="btn_active_animation_open nav_link btn_modal_about_on">
+                                <span class="material-symbols-outlined">
+                                    info
+                                </span>
+                                &nbsp; &nbsp; à propos</a>
+                            </li>
+
+                            <li class="nav_item btn_modal_contact_on"><a class="nav_link">
+                                <span class="material-symbols-outlined">
+                                    contact_mail
+                                </span>
+                                &nbsp; &nbsp; Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="a_links">
+                        <a href="https://github.com/HugoEmanuelLC/MonPortfolio2023" target="_blank" class="hero_social_links__link">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                        
+                        <a href="https://www.linkedin.com/in/hugoclavinas/" target="_blank" class="hero_social_links__link">
+                            <i class='bx bxl-linkedin-square'></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+    
+            <main data-aos="fade-up">
+                <div id="AddComponents" class="container">
+                    <!-- HERO -->
+                    <section id="home" class="hero">
+                        <div data-aos="fade-up" class="hero__content">
+                            <h1 class="hero__content__subtitle">Frontend <span>Developer</span></h1>
+                            <div class="skills">
+                                <ul class="Acquired">
+                                    <li title="html5"><i class="fa-brands fa-html5"></i></li>
+                                    <!-- <li title="css3"><i class="fa-brands fa-css3-alt"></i></li> -->
+                                    <li title="sass"><i class="fa-brands fa-sass"></i></li>
+                                    <li title="javascript"><i class="fa-brands fa-js"></i></li>
+                                    <!-- <li title="jquery"><i class='bx bxl-jquery'></i></li> -->
+                                    <li title="reactjs"><i class="fa-brands fa-react"></i></li>
+                                    <li title="nodejs"><i class='bx bxl-nodejs' ></i></li>
+                                    <li title="php"><span class="material-symbols-outlined">php</span></li>
+                                    <li title="mongodb"><i class='bx bxl-mongodb' ></i></li>
+                                    <li title="github"><i class='bx bxl-github' ></i></li>
+                                </ul>
+                            </div>
+                            <h2 class="hero__content__title">Hugo Clavinas</h2>
+                            <a href="#/about" class="btn_active_animation_open hero_content_button">À propos de moi</a>
+                        </div>
+                    </section>
+    
+                    <!-- PROJECT -->
+                    <section id="projects" class="projects_list" >
+                        <div class="projects_content">
+                            <h2 class="content_title">
+                                Projets 
+                                <a href="#/Allprojects" class="btn_page_allprojects_on" title="More projects" >
+                                    voir plus &nbsp; <i class="fa-solid fa-angle-right"></i> 
+                                </a>
+                            </h2>
+                            <!-- <span class="underline"></span> -->
+                            <div class="projects_body">
+
+                            </div> 
+                            <!-- <div class="a_links">
+                                <a href="#/Allprojects" class="btn_page_allprojects_on" title="More projects" >
+                                    <i class="fa-solid fa-angle-right"></i> &nbsp; View more
+                                </a>
+                            </div> -->
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+
+        
+    </div>
+
+    <script src="main.js" type="module"></script>
+    <!-- ADD COMPONENTS -->
+    <script src="./public/js/routesComponents/AddComponents.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>

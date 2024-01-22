@@ -1,0 +1,90 @@
+[
+    {
+        "id": 0,
+        "priority": 1,
+        "title": "Star Wars",
+        "pathUrlimages":"starwars.png",
+        "type": "Api",
+        "description": ["Projet front end, travaille avec l'Api Star Wars."],
+        "technos": ["HTML5", "CSS3", "SASS", "JavaScript", "Swiper", "Api", "GitHub"],
+        "linkViewProject": "https://hugoemanuellc.github.io/AsyncJS/Exo-Optionel-SatarWars/",
+        "linkGitHub": "https://github.com/HugoEmanuelLC/AsyncJS/tree/main/Exo-Optionel-SatarWars"
+    },
+    {
+        "id": 1,
+        "priority": 1,
+        "title": "Job tracker",
+        "pathUrlimages":"job-tracker.png",
+        "type": "Application",
+        "description": ["Dans le cadre d'un projet de groupe FULL STACK.", "Cette application utilise le concept CRUD.", "Il utilise également des jetons JWT pour authentifier les utilisateurs."],
+        "technos": ["EJS", "SASS", "JavaScript", "Node.js", "Express.js", "Mongoose", "GitHub"],
+        "linkViewProject": "https://mah-search-weld.vercel.app/",
+        "linkGitHub": "https://github.com/HugoEmanuelLC/mah-search"
+    },
+    {
+        "id": 2,
+        "priority": 0,
+        "title": "Studio-Design-Landin-Page",
+        "pathUrlimages":"Studio-Design-Landin-Page.png",
+        "type": "Figma",
+        "description": ["Projet front end, creation d'un designe figma.", "Travailles avec des librairies."],
+        "technos": ["HTML5", "CSS", "JavaScript", "Swiper", "GitHub"],
+        "linkViewProject": "https://hugoemanuellc.github.io/js/Studio-Design-Landin-Page/",
+        "linkGitHub": "https://github.com/HugoEmanuelLC/js/tree/main/Studio-Design-Landin-Page"
+    },
+    {
+        "id": 3,
+        "priority": 0,
+        "title": "Game Of Thrones",
+        "pathUrlimages":"Game-Of-Thrones.png",
+        "type": "Api",
+        "description": ["Projet front end, travaille avec la librairie swiper."],
+        "technos": ["HTML5", "SASS", "JavaScript", "Swiper", "GitHub"],
+        "linkViewProject": "https://hugoemanuellc.github.io/js/Exo-Game-Of-Thrones/",
+        "linkGitHub": "https://github.com/HugoEmanuelLC/js/tree/main/Exo-Game-Of-Thrones"
+    },
+    {
+        "id": 4,
+        "priority": 1,
+        "title": "Oxo",
+        "pathUrlimages":"jeux-oxo.png",
+        "type": "Jeux",
+        "description": ["Réalisation du jeux Tic Tac Toe à l'aide de javascript vanilla"],
+        "technos": ["HTML5", "SASS", "JavaScript", "GitHub"],
+        "linkViewProject": "https://hugoemanuellc.github.io/js/DOM/exo14-oxo-jeux/",
+        "linkGitHub": "https://github.com/HugoEmanuelLC/js/tree/main/DOM/exo14-oxo-jeux"
+    },
+    {
+        "id": 5,
+        "priority": 0,
+        "title": "search products",
+        "pathUrlimages":"search.png",
+        "type": "Api",
+        "description": ["Projet front end, travaille avec l'Api www.themealdb.com"],
+        "technos": ["HTML5", "CSS", "JavaScript", "Api", "GitHub"],
+        "linkViewProject": "https://hugoemanuellc.github.io/AsyncJS/Final-exercise/",
+        "linkGitHub": "https://github.com/HugoEmanuelLC/AsyncJS/tree/main/Final-exercise"
+    },
+    {
+        "id": 6,
+        "priority": 0,
+        "title": "EShop",
+        "pathUrlimages":"eshop.png",
+        "type": "Prestashop",
+        "description": ["Zone en développement..."],
+        "technos": ["HTML5", "CSS", "JavaScript"],
+        "linkViewProject": "https://hugoclavinas.com/Demos/EShop/",
+        "linkGitHub": "#"
+    },
+    {
+        "id": 7,
+        "priority": 1,
+        "title": "BeMovie",
+        "pathUrlimages":"bemovie.jpg",
+        "type": "Api",
+        "description": ["Projet de groupe front end.", "Utilisation de l'Api https://api.themoviedb.org.", "Utilisation de la librairie Swiper."],
+        "technos": ["HTML5", "SASS", "JavaScript", "Swiper", "Api", "GitHub"],
+        "linkViewProject": "https://hugoemanuellc.github.io/Exo_BeMovies_duo_hug_luc/",
+        "linkGitHub": "https://github.com/HugoEmanuelLC/Exo_BeMovies_duo_hug_luc"
+    }
+]

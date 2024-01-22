@@ -1,0 +1,45 @@
+#about{
+    .about,
+    .skills{
+        padding: 50px;
+        margin: auto;
+        max-width: 800px;
+        @include blur;
+
+        ul{
+            margin-bottom: 50px;
+        }
+
+        p,
+        li{
+            font-size: 14px;
+            font-weight: 100;
+            line-height: 16px;
+            letter-spacing: 1px;
+            color: white;
+            font-family: 'Roboto Flex', sans-serif;
+        }
+        .first_p{
+            margin-top: 40px;
+        }
+
+    }
+
+    .about{
+        max-width: 800px;
+        color: $color_20;
+
+        .first_p{
+            margin-top: 40px;
+        }
+    }
+
+    .skills{
+        ul{
+            li{
+                list-style:disc;
+                list-style-position: inside;
+            }
+        }
+    }
+}

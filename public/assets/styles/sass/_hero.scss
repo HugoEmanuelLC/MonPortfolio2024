@@ -1,0 +1,113 @@
+section.hero{
+    .hero__content{
+        color: white;
+        padding: 40px 0px;
+        @include Dfx_JCc_AIc;
+        flex-direction: column;
+        background-color: $color_60_opo;
+        @include Larges{
+            border-radius: 15px;
+            align-items: flex-start;
+            padding: 40px 50px;
+        };
+        @include Larges_max{
+            background-color: transparent;
+        }
+
+
+        h1{
+            // padding: 20px 10px;
+            color: $color_10;
+            text-shadow: 2px 2px 2px $color_60;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: -3px;
+            font-family: 'Roboto Flex', sans-serif;
+            span{
+                font-family: 'Roboto Flex', sans-serif;
+                font-weight: 300;
+                color: white;
+                letter-spacing: -3px;
+            }
+            @include Larges_max{
+                font-size: 7vw;
+            }
+            @include Larges{
+                font-size: 68.5px;
+            }
+            // @include Phones_max{
+            //     font-size: 30px;
+            // }
+        }
+        h2{
+            text-shadow: 2px 2px 2px $color_60;
+            text-transform: uppercase;
+            padding: 5px 0 30px;
+            @include Larges_max{
+                font-size: 5vw;
+            }
+            @include Larges{
+                font-size: 35px;
+            }
+            // @include Phones_max{
+            //     font-size: 25px;
+            // }
+        }
+
+        .skills{
+            // @include borderTest(white);
+            // padding: 0 0 40px;
+            @include Phones_max{
+                // padding: 0 0 30px;
+            }
+        
+            ul{
+                @include Dfx_JCc_AIc;
+                gap: 3px;
+            }
+        
+            li{
+                // @include borderTest(white);
+                // border: solid 1px white;
+                // background-color: $color_10;
+                
+                height: 35px;
+                width: 35px;
+                // border-radius: 6px;
+                @include Dfx_JCc_AIc;
+                @include Larges_max{
+                    height: 5vw;
+                    width: 5vw;
+                }
+
+                i,span{
+                    color: $color_10;
+                    font-size: 27px;
+                    // @include Dfx_JCc_AIc;
+                    @include Phones_max{
+                        font-size: 20px;
+                    }
+                }
+            }
+            img{
+                max-height: 100%;
+                max-width: 100%;
+            }
+        }
+
+        .hero_content_button{
+            border: solid 1px $color_20;
+            background-color: $color_60;
+            @include Dfx_JCc_AIc;
+            padding: 8px 20px;
+            border-radius: 10px;
+            // margin-top: 40px;
+
+            &:hover{
+                // background-color: $color_10;
+                color: $color_10;
+                border: solid 1px $color_10;
+            }
+        }
+    }
+}

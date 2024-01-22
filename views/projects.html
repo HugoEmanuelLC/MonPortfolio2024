@@ -1,0 +1,54 @@
+<!-- PROJECT -->
+<section id="Allprojects" class="projects_list" data-aos="fade-up" >
+    <div class="projects_content">
+        <h2 class="content_title">Projets</h2>
+        <!-- <span class="underline"></span> -->
+        <div class="projects_body">
+            
+        </div> 
+    </div>
+</section>
+
+<script>
+// title = "Home | Ecomerce model 01";
+// $("title").html(title);
+dataAllProjects = async () => {
+    const Allprojects = document.querySelector('#Allprojects .projects_body')
+    await fetch('./src/datas/projects.json')
+    .then(res => res.json())  
+    .then(data => {
+        data.forEach(item => {
+            // let p = ""
+            // item.description.forEach((paragraphe) => {p += `<p>${paragraphe}</p><br>`})
+            Allprojects.innerHTML += `
+                <div class="project_card">
+                    <div class="card_content" style="background-image: url('./public/assets/images/projects_images/${item.pathUrlimages}');">
+                        <div class="card_modal" data-id-project="${item.id}">
+                            <p>INFOS</p>
+                        </div>
+                        <div class="back_shadow">
+                            <div class="project_description">
+                                <h3>${item.title}</h3>
+                                <p>${item.type}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <a class="btn_view_project" title="voir projet" href="${item.linkViewProject}" target="_blank">voir projet</a>
+                        <a class="btn_git" title="GitHub" href="${item.linkGitHub}" target="_blank">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                    </div>
+                </div>
+            `
+        })
+    }) 
+}
+
+dataAllProjects()
+
+
+let AddComponente = document.querySelector('#AddComponents');
+AddComponente.scrollTo({ top: 0, behavior: 'smooth' });
+window.scrollTo({ top: 0, behavior: 'smooth' });
+</script>
