@@ -45,7 +45,7 @@
     },
     {
         "id": 4,
-        "priority": 1,
+        "priority": 0,
         "title": "Oxo",
         "pathUrlimages":"jeux-oxo.png",
         "type": "Jeux",
@@ -78,7 +78,7 @@
     },
     {
         "id": 7,
-        "priority": 1,
+        "priority": 0,
         "title": "BeMovie",
         "pathUrlimages":"bemovie.jpg",
         "type": "Api",
@@ -86,5 +86,16 @@
         "technos": ["HTML5", "SASS", "JavaScript", "Swiper", "Api", "GitHub"],
         "linkViewProject": "https://hugoemanuellc.github.io/Exo_BeMovies_duo_hug_luc/",
         "linkGitHub": "https://github.com/HugoEmanuelLC/Exo_BeMovies_duo_hug_luc"
+    },
+    {
+        "id": 8,
+        "priority": 1,
+        "title": "Wawmomo",
+        "pathUrlimages":"wawmomo.png",
+        "type": "Site web",
+        "description": ["Creation d'un site web pour un petit et sympa snack", "Côté frontend je utilise Sass et JQuery principalment", "Côté backend j'ai creer un petit panel de configuration en PHP pour le control de donnes du menu donc une Api pour les afficher sur la page web."],
+        "technos": ["HTML5", "SASS", "JavaScript", "JQuery", "Php"],
+        "linkViewProject": "https://www.wawmomo.be/",
+        "linkGitHub": ""
     }
 ]

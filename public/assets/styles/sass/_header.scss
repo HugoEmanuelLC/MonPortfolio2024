@@ -123,10 +123,10 @@ header{
                         width: 100%;
                         padding: 5px 20px;
                         cursor: pointer;
-                        @include Dfx_JCc_AIc;
+                        @include Dfx_JCsb_AIc;
+                            // justify-content: center;
                         @include Larges{
                             padding: 15px 40px;
-                            justify-content: flex-start;
                         };
                         @include Larges_max{
                             padding: 5px 50px;
@@ -139,6 +139,14 @@ header{
                             @include Larges_max{
                                 background-color: $color_50;
                             }
+                        }
+                        i,span{
+                            // @include borderTest(blue);
+                            min-width: 40px;
+                            @include Dfx_JCc_AIc;
+                        }
+                        .fa-file-pdf{
+                            font-size: 22px;
                         }
                     }
                 }

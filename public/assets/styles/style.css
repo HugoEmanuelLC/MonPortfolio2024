@@ -147,13 +147,13 @@ span.underline {
   .a_links {
     width: 100%;
     align-items: flex-start;
-    padding-left: 30px;
+    padding-left: 40px;
     margin: 0 0 0 0;
   }
 }
 .a_links a {
   border: solid 2px rgb(200, 200, 200);
-  padding: 5px 63px 5px 5px;
+  padding: 5px 65px 5px 5px;
   color: rgb(200, 200, 200);
   border-radius: 10px;
   display: flex;
@@ -162,7 +162,7 @@ span.underline {
 }
 .a_links a:hover {
   color: #0b86af;
-  padding: 5px 5px 5px 63px;
+  padding: 5px 5px 5px 65px;
   border: solid 2px #0b86af;
 }
 .a_links i {
@@ -299,13 +299,12 @@ header .header_content nav ul li a {
   padding: 5px 20px;
   cursor: pointer;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 @media screen and (min-width: 1200px) {
   header .header_content nav ul li a {
     padding: 15px 40px;
-    justify-content: flex-start;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -323,6 +322,15 @@ header .header_content nav ul li a:hover {
   header .header_content nav ul li a:hover {
     background-color: white;
   }
+}
+header .header_content nav ul li a i, header .header_content nav ul li a span {
+  min-width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header_content nav ul li a .fa-file-pdf {
+  font-size: 22px;
 }
 header #btn_navbar_on {
   display: none;
@@ -631,12 +639,6 @@ section.hero .hero__content h1 {
   letter-spacing: -3px;
   font-family: "Roboto Flex", sans-serif;
 }
-section.hero .hero__content h1 span {
-  font-family: "Roboto Flex", sans-serif;
-  font-weight: 300;
-  color: white;
-  letter-spacing: -3px;
-}
 @media screen and (max-width: 1200px) {
   section.hero .hero__content h1 {
     font-size: 7vw;
@@ -650,17 +652,26 @@ section.hero .hero__content h1 span {
 section.hero .hero__content h2 {
   text-shadow: 2px 2px 2px #0e1112;
   text-transform: uppercase;
-  padding: 5px 0 30px;
+  font-weight: 700;
 }
 @media screen and (max-width: 1200px) {
   section.hero .hero__content h2 {
-    font-size: 5vw;
+    font-size: 10vw;
   }
 }
 @media screen and (min-width: 1200px) {
   section.hero .hero__content h2 {
-    font-size: 35px;
+    font-size: 100px;
   }
+}
+section.hero .hero__content .hero_span_title {
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 300;
+  color: white;
+  letter-spacing: -3px;
+}
+section.hero .hero__content .skills {
+  padding: 5px 0 30px;
 }
 section.hero .hero__content .skills ul {
   display: flex;

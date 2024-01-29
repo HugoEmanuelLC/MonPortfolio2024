@@ -23,40 +23,40 @@ section.hero{
             text-transform: uppercase;
             letter-spacing: -3px;
             font-family: 'Roboto Flex', sans-serif;
-            span{
-                font-family: 'Roboto Flex', sans-serif;
-                font-weight: 300;
-                color: white;
-                letter-spacing: -3px;
-            }
             @include Larges_max{
                 font-size: 7vw;
             }
             @include Larges{
                 font-size: 68.5px;
             }
-            // @include Phones_max{
-            //     font-size: 30px;
-            // }
         }
         h2{
+            // @include borderTest(white);
             text-shadow: 2px 2px 2px $color_60;
             text-transform: uppercase;
-            padding: 5px 0 30px;
+            // padding: 5px 0 30px;
+            font-weight: 700;
             @include Larges_max{
-                font-size: 5vw;
+                font-size: 10vw;
             }
             @include Larges{
-                font-size: 35px;
+                font-size: 100px;
             }
             // @include Phones_max{
             //     font-size: 25px;
             // }
         }
+        .hero_span_title{
+            font-family: 'Roboto Flex', sans-serif;
+            font-weight: 300;
+            color: white;
+            letter-spacing: -3px;
+        }
 
         .skills{
             // @include borderTest(white);
             // padding: 0 0 40px;
+            padding: 5px 0 30px;
             @include Phones_max{
                 // padding: 0 0 30px;
             }

@@ -121,20 +121,20 @@ span.underline{
         width: 100%;
         // @include Dfx_JCf_AIc;
         align-items: flex-start;
-        padding-left: 30px;
+        padding-left: 40px;
         margin: 0 0 0 0;
     };
     a{
         // @include borderTest(green);
         border: solid 2px $color_20;
-        padding: 5px 63px 5px 5px;
+        padding: 5px 65px 5px 5px;
         color: $color_20;
         border-radius: 10px;
         @include Dfx_JCc_AIc;
 
         &:hover{
             color: $color_10;
-            padding: 5px 5px 5px 63px;
+            padding: 5px 5px 5px 65px;
             border: solid 2px $color_10;
         }
     }

@@ -70,27 +70,49 @@ const dataProjects = async (bloc) => {
                 if (item.priority == 1) {
                     // let p = ""
                     // item.description.forEach((paragraphe) => {p += `<p>${paragraphe}</p><br>`})
-                    project.innerHTML += `
-                    <div class="project_card">
-                        <div class="card_content" style="background-image: url('./public/assets/images/projects_images/${item.pathUrlimages}');">
-                            <div class="card_modal" data-id-project="${item.id}">
-                                <p>INFOS</p>
-                            </div>
-                            <div class="back_shadow">
-                                <div class="project_description">
-                                    <h3>${item.title}</h3>
-                                    <p>${item.type}</p>
+                    if (item.linkGitHub == "") {
+                        project.innerHTML += `
+                            <div class="project_card">
+                                <div class="card_content" style="background-image: url('./public/assets/images/projects_images/${item.pathUrlimages}');">
+                                    <div class="card_modal" data-id-project="${item.id}">
+                                        <p class="card_modal_p" data-id-project="${item.id}">INFOS</p>
+                                    </div>
+                                    <div class="back_shadow">
+                                        <div class="project_description">
+                                            <h3>${item.title}</h3>
+                                            <p>${item.type}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="links">
+                                    <a class="btn_view_project" title="voir projet" href="${item.linkViewProject}" target="_blank">voir projet</a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="links">
-                            <a class="btn_view_project" title="voir projet" href="${item.linkViewProject}" target="_blank">voir projet</a>
-                            <a class="btn_git" title="GitHub" href="${item.linkGitHub}" target="_blank">
-                                <i class='bx bxl-github'></i>
-                            </a>
-                        </div>
-                    </div>
-                    `
+                            `
+                    } else {
+                        project.innerHTML += `
+                            <div class="project_card">
+                                <div class="card_content" style="background-image: url('./public/assets/images/projects_images/${item.pathUrlimages}');">
+                                    <div class="card_modal" data-id-project="${item.id}">
+                                        <p class="card_modal_p" data-id-project="${item.id}">INFOS</p>
+                                    </div>
+                                    <div class="back_shadow">
+                                        <div class="project_description">
+                                            <h3>${item.title}</h3>
+                                            <p>${item.type}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="links">
+                                    <a class="btn_view_project" title="voir projet" href="${item.linkViewProject}" target="_blank">voir projet</a>
+                                    <a class="btn_git" title="GitHub" href="${item.linkGitHub}" target="_blank">
+                                        <i class='bx bxl-github'></i>
+                                    </a>
+                                </div>
+                            </div>
+                            `
+                    }
+                    
                 } 
             })
         }
@@ -126,8 +148,9 @@ let dataModalProject = (id) => {
 
 }
 document.addEventListener('click', (e) => {
-    // console.log(e.target.matches('.card_modal'));
-    if (e.target.matches('.card_modal')) {
+    // console.log(e.target);
+    
+    if (e.target.matches('.card_modal') || e.target.matches('.card_modal_p')) {
         let id = e.target.getAttribute('data-id-project')
         // console.log(id);
         modalOnOff(modal_project)
