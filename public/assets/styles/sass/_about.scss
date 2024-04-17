@@ -5,9 +5,26 @@
         margin: auto;
         max-width: 800px;
         @include blur;
+        @include Phones_max{
+            padding: 50px 20px;
+        }
+
+        .soft_skills{
+            margin-top: 100px;
+        }
 
         ul{
             margin-bottom: 50px;
+
+            h3{
+                font-size: 20px;
+                font-weight: 100;
+                line-height: 24px;
+                letter-spacing: 1px;
+                color: white;
+                // font-family: 'Roboto Flex', sans-serif;
+                padding: 40px 0 20px;
+            }
         }
 
         p,
@@ -19,9 +36,9 @@
             color: white;
             font-family: 'Roboto Flex', sans-serif;
         }
-        .first_p{
-            margin-top: 40px;
-        }
+        // .first_p{
+        //     margin-top: 40px;
+        // }
 
     }
 
