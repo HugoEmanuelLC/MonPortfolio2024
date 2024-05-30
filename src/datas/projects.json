@@ -89,13 +89,29 @@
     },
     {
         "id": 8,
-        "priority": 1,
+        "priority": 0,
         "title": "Wawmomo",
         "pathUrlimages":"wawmomo.png",
         "type": "Site web",
         "description": ["Mon premiere projet avant d'entrer en formation chez BeCode, un site web pour un petit et sympa snack", "Côté frontend je utilise Sass et JQuery principalment", "Côté backend j'ai creer un petit panel de configuration en PHP pour le control de donnes du menu donc une Api pour les afficher sur la page web."],
         "technos": ["HTML5", "SASS", "JavaScript", "JQuery", "Php"],
         "linkViewProject": "https://www.wawmomo.be/",
+        "linkGitHub": ""
+    },
+    {
+        "id": 9,
+        "priority": 1,
+        "title": "Lex&Co.",
+        "pathUrlimages":"lexandco.png",
+        "type": "Application Mobile",
+        "description": [
+            "Durant mon stage de 2 mois, j'ai eu l'opportunité de développer un réseau social complet (MVP) sous forme d'application mobile téléchargeable sur Google Play et Apple Store.",
+            "Un réseau social fonctionnel et complet, disponible sur les plateformes mobiles majeures, démontrant mes compétences techniques et mon aptitude à mener à bien des projets complexes.", 
+            "On a utilisé React Native avec le framework Expo pour le développement de l'application mobile, Appwrite pour la gestion des utilisateurs et des données ainsi que le stockage des images.", 
+            "J'ai configurer un VPS et géré l'installation d'Appwrite ainsi que la configuration du DNS du client."
+        ],
+        "technos": ["React Native", "Expo", "Appwrite", "VPS", "DNS"],
+        "linkViewProject": "",
         "linkGitHub": ""
     }
 ]
