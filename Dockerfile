@@ -1,12 +1,9 @@
-FROM node:18-alpine
+FROM nginx:alpine
 
-# WORKDIR /app
+WORKDIR /app
 
 COPY . .
 
-# RUN npm install -g npm@10.5.0
-# RUN npm install
+EXPOSE 8080
 
-EXPOSE 3038
-
-# CMD [ "npm", "run", "dev" ]
+CMD ["nginx", "-g", "daemon off;"]

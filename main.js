@@ -66,7 +66,9 @@ const dataProjects = async (bloc) => {
     .then(res => res.json())  
     .then(data => {
         if (document.querySelector('#projects')) {
-            data.forEach(item => {
+            let tamponData = data
+            tamponData.reverse()
+            tamponData.forEach(item => {
                 if (item.priority == 1) {
                     // let p = ""
                     // item.description.forEach((paragraphe) => {p += `<p>${paragraphe}</p><br>`})

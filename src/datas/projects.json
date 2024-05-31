@@ -1,28 +1,17 @@
 [
     {
         "id": 0,
-        "priority": 1,
-        "title": "Star Wars",
-        "pathUrlimages":"starwars.png",
-        "type": "Api",
-        "description": ["Projet front end, travaille avec l'Api Star Wars."],
-        "technos": ["HTML5", "CSS3", "SASS", "JavaScript", "Swiper", "Api", "GitHub"],
-        "linkViewProject": "https://hugoemanuellc.github.io/AsyncJS/Exo-Optionel-SatarWars/",
-        "linkGitHub": "https://github.com/HugoEmanuelLC/AsyncJS/tree/main/Exo-Optionel-SatarWars"
+        "priority": 0,
+        "title": "Wawmomo",
+        "pathUrlimages":"wawmomo.png",
+        "type": "Site web",
+        "description": ["Mon premiere projet avant d'entrer en formation chez BeCode, un site web pour un petit et sympa snack", "Côté frontend je utilise Sass et JQuery principalment", "Côté backend j'ai creer un petit panel de configuration en PHP pour le control de donnes du menu donc une Api pour les afficher sur la page web."],
+        "technos": ["HTML5", "SASS", "JavaScript", "JQuery", "Php"],
+        "linkViewProject": "https://www.wawmomo.be/",
+        "linkGitHub": ""
     },
     {
         "id": 1,
-        "priority": 1,
-        "title": "Job tracker",
-        "pathUrlimages":"job-tracker.png",
-        "type": "Application",
-        "description": ["Dans le cadre d'un projet de groupe FULL STACK.", "Cette application utilise le concept CRUD.", "Il utilise également des jetons JWT pour authentifier les utilisateurs."],
-        "technos": ["EJS", "SASS", "JavaScript", "Node.js", "Express.js", "Mongoose", "GitHub"],
-        "linkViewProject": "https://mah-search-weld.vercel.app/",
-        "linkGitHub": "https://github.com/HugoEmanuelLC/mah-search"
-    },
-    {
-        "id": 2,
         "priority": 0,
         "title": "Studio-Design-Landin-Page",
         "pathUrlimages":"Studio-Design-Landin-Page.png",
@@ -33,7 +22,7 @@
         "linkGitHub": "https://github.com/HugoEmanuelLC/js/tree/main/Studio-Design-Landin-Page"
     },
     {
-        "id": 3,
+        "id": 2,
         "priority": 0,
         "title": "Game Of Thrones",
         "pathUrlimages":"Game-Of-Thrones.png",
@@ -44,7 +33,7 @@
         "linkGitHub": "https://github.com/HugoEmanuelLC/js/tree/main/Exo-Game-Of-Thrones"
     },
     {
-        "id": 4,
+        "id": 3,
         "priority": 0,
         "title": "Oxo",
         "pathUrlimages":"jeux-oxo.png",
@@ -55,7 +44,7 @@
         "linkGitHub": "https://github.com/HugoEmanuelLC/js/tree/main/DOM/exo14-oxo-jeux"
     },
     {
-        "id": 5,
+        "id": 4,
         "priority": 0,
         "title": "search products",
         "pathUrlimages":"search.png",
@@ -66,7 +55,7 @@
         "linkGitHub": "https://github.com/HugoEmanuelLC/AsyncJS/tree/main/Final-exercise"
     },
     {
-        "id": 6,
+        "id": 5,
         "priority": 0,
         "title": "EShop",
         "pathUrlimages":"eshop.png",
@@ -77,7 +66,7 @@
         "linkGitHub": "#"
     },
     {
-        "id": 7,
+        "id": 6,
         "priority": 0,
         "title": "BeMovie",
         "pathUrlimages":"bemovie.jpg",
@@ -88,15 +77,26 @@
         "linkGitHub": "https://github.com/HugoEmanuelLC/Exo_BeMovies_duo_hug_luc"
     },
     {
+        "id": 7,
+        "priority": 1,
+        "title": "Star Wars",
+        "pathUrlimages":"starwars.png",
+        "type": "Api",
+        "description": ["Projet front end, travaille avec l'Api Star Wars."],
+        "technos": ["HTML5", "CSS3", "SASS", "JavaScript", "Swiper", "Api", "GitHub"],
+        "linkViewProject": "https://hugoemanuellc.github.io/AsyncJS/Exo-Optionel-SatarWars/",
+        "linkGitHub": "https://github.com/HugoEmanuelLC/AsyncJS/tree/main/Exo-Optionel-SatarWars"
+    },
+    {
         "id": 8,
-        "priority": 0,
-        "title": "Wawmomo",
-        "pathUrlimages":"wawmomo.png",
-        "type": "Site web",
-        "description": ["Mon premiere projet avant d'entrer en formation chez BeCode, un site web pour un petit et sympa snack", "Côté frontend je utilise Sass et JQuery principalment", "Côté backend j'ai creer un petit panel de configuration en PHP pour le control de donnes du menu donc une Api pour les afficher sur la page web."],
-        "technos": ["HTML5", "SASS", "JavaScript", "JQuery", "Php"],
-        "linkViewProject": "https://www.wawmomo.be/",
-        "linkGitHub": ""
+        "priority": 1,
+        "title": "Job tracker",
+        "pathUrlimages":"job-tracker.png",
+        "type": "Application",
+        "description": ["Dans le cadre d'un projet de groupe FULL STACK.", "Cette application utilise le concept CRUD.", "Il utilise également des jetons JWT pour authentifier les utilisateurs."],
+        "technos": ["EJS", "SASS", "JavaScript", "Node.js", "Express.js", "Mongoose", "GitHub"],
+        "linkViewProject": "https://mah-search-weld.vercel.app/",
+        "linkGitHub": "https://github.com/HugoEmanuelLC/mah-search"
     },
     {
         "id": 9,

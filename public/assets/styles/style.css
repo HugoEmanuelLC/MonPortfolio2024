@@ -61,6 +61,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   position: relative;
+  overflow: hidden;
 }
 #page .back_shadow_page {
   background-color: rgba(10, 12, 12, 0.5);

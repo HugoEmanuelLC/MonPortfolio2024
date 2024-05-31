@@ -17,7 +17,9 @@ dataAllProjects = async () => {
     await fetch('./src/datas/projects.json')
     .then(res => res.json())  
     .then(data => {
-        data.forEach(item => {
+        let tamponData = data
+        tamponData.reverse()
+        tamponData.forEach(item => {
             // let p = ""
             // item.description.forEach((paragraphe) => {p += `<p>${paragraphe}</p><br>`})
             Allprojects.innerHTML += `
