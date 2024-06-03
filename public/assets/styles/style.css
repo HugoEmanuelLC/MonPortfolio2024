@@ -51,9 +51,13 @@ body {
   background: #0e1112;
   color: white;
 }
+@media screen and (min-width: 1200px) {
+  body {
+    overflow: hidden;
+  }
+}
 
 #page {
-  border: solid 1px red;
   background-image: url("../images/foto.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -62,6 +66,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   position: relative;
+  overflow: hidden;
 }
 #page .back_shadow_page {
   background-color: rgba(10, 12, 12, 0.5);
@@ -76,7 +81,6 @@ body {
 }
 
 main {
-  overflow: hidden;
   color: black;
   min-height: 100vh;
   backdrop-filter: blur(5px);
@@ -374,6 +378,7 @@ header #btn_navbar_on ~ label {
   width: 100%;
   position: absolute;
   left: 0;
+  right: 0;
 }
 
 .active_animation_open {
@@ -402,10 +407,9 @@ header #btn_navbar_on ~ label {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   position: fixed;
-  top: 0;
-  left: 0;
   z-index: 1000;
   overflow: hidden;
+  margin: auto;
 }
 #modal .body_modal,
 #modal_project .body_modal {
@@ -560,6 +564,8 @@ header #btn_navbar_on ~ label {
   transition: 600ms;
   height: 100vh;
   width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .modal_desactive {
@@ -569,22 +575,24 @@ header #btn_navbar_on ~ label {
   transition: 600ms;
   height: 0;
   width: 0;
+  top: 50%;
+  left: 50%;
 }
 
 @keyframes modal-on {
   0% {
-    border-radius: 0 50% 50% 50%;
+    border-radius: 50%;
   }
   100% {
-    border-radius: 0 0 0 0;
+    border-radius: 0;
   }
 }
 @keyframes modal-off {
   0% {
-    border-radius: 0 0 0 0;
+    border-radius: 0;
   }
   100% {
-    border-radius: 0 50% 50% 50%;
+    border-radius: 50%;
   }
 }
 .btn_modal_off,

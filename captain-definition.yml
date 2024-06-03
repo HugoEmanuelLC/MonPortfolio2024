@@ -1,7 +1,0 @@
-schemaVersion: 2
-templateId: nginx/1.19
-services:
-  web:
-    image: <nom-de-votre-image-docker>
-    environment:
-      - PORT=80
