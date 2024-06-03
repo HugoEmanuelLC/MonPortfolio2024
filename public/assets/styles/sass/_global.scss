@@ -8,7 +8,7 @@ body{
 }
 
 #page{
-    // border: solid 1px red;
+    border: solid 1px red;
     background-image: url('../images/foto.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -18,7 +18,6 @@ body{
     // min-height: 100%;
     margin: 0 auto;
     position: relative;
-    overflow: hidden;
     
 
     .back_shadow_page{
@@ -36,6 +35,7 @@ body{
 }
 
 main{
+    overflow: hidden;
     // @include borderTest(red);
     color: black;
     // padding: 10px;

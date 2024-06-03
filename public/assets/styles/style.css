@@ -53,6 +53,7 @@ body {
 }
 
 #page {
+  border: solid 1px red;
   background-image: url("../images/foto.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -61,7 +62,6 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   position: relative;
-  overflow: hidden;
 }
 #page .back_shadow_page {
   background-color: rgba(10, 12, 12, 0.5);
@@ -76,6 +76,7 @@ body {
 }
 
 main {
+  overflow: hidden;
   color: black;
   min-height: 100vh;
   backdrop-filter: blur(5px);
