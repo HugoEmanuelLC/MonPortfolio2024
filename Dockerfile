@@ -1,9 +1,3 @@
-FROM node:18-alpine
+FROM nginx:alpine
 
-WORKDIR /app
-
-COPY . .
-
-EXPOSE 8080
-
-CMD [ "serve", "-s", "build" ]
+COPY . /usr/share/nginx/html
