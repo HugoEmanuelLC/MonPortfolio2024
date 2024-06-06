@@ -70,51 +70,34 @@ const dataProjects = async (bloc) => {
             tamponData.reverse()
             tamponData.forEach(item => {
                 if (item.priority == 1) {
-                    // let p = ""
-                    // item.description.forEach((paragraphe) => {p += `<p>${paragraphe}</p><br>`})
-                    if (item.linkGitHub == "") {
-                        project.innerHTML += `
-                            <div class="project_card">
-                                <div class="card_content" style="background-image: url('./public/assets/images/projects_images/${item.pathUrlimages}');">
-                                    <div class="card_modal" data-id-project="${item.id}">
-                                        <p class="card_modal_p" data-id-project="${item.id}">INFOS</p>
-                                    </div>
-                                    <div class="back_shadow">
-                                        <div class="project_description">
-                                            <h3>${item.title}</h3>
-                                            <p>${item.type}</p>
-                                        </div>
-                                    </div>
+
+                    project.innerHTML += `
+                        <div class="project_card">
+                            <div class="card_content" style="background-image: url('./public/assets/images/projects_images/${item.pathUrlimages}');">
+                                <div class="card_modal" data-id-project="${item.id}">
+                                    <p class="card_modal_p" data-id-project="${item.id}">INFOS</p>
                                 </div>
-                                <div class="links">
-                                    <a class="btn_view_project" title="voir projet" href="${item.linkViewProject}" target="_blank">voir projet</a>
+                                <div class="back_shadow">
+                                    <div class="project_description">
+                                        <h3>${item.title}</h3>
+                                        <p>${item.type}</p>
+                                    </div>
                                 </div>
                             </div>
-                            `
-                    } else {
-                        project.innerHTML += `
-                            <div class="project_card">
-                                <div class="card_content" style="background-image: url('./public/assets/images/projects_images/${item.pathUrlimages}');">
-                                    <div class="card_modal" data-id-project="${item.id}">
-                                        <p class="card_modal_p" data-id-project="${item.id}">INFOS</p>
-                                    </div>
-                                    <div class="back_shadow">
-                                        <div class="project_description">
-                                            <h3>${item.title}</h3>
-                                            <p>${item.type}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="links">
-                                    <a class="btn_view_project" title="voir projet" href="${item.linkViewProject}" target="_blank">voir projet</a>
-                                    <a class="btn_git" title="GitHub" href="${item.linkGitHub}" target="_blank">
-                                        <i class='bx bxl-github'></i>
-                                    </a>
-                                </div>
+                            <div class="links">
+                                ${item.linkViewProject == "" ? 
+                                    `<a class="btn_view_project" title="voir projet" onClick="alert('Pour le moment ce projet ne contient pas de lien !')" target="_blank">voir projet</a>` 
+                                    : 
+                                    `<a class="btn_view_project" title="voir projet" href="${item.linkViewProject}" target="_blank">voir projet</a>`
+                                }
+                                ${item.linkGitHub == "" ? 
+                                    `<a class="btn_git" title="GitHub" onClick="alert('Pour le moment ce projet ne contient pas de lien !')" target="_blank"><i class='bx bxl-github'></i></a>` 
+                                    :
+                                    `<a class="btn_git" title="GitHub" href="${item.linkGitHub}" target="_blank"><i class='bx bxl-github'></i></a>`
+                                }
                             </div>
-                            `
-                    }
-                    
+                        </div>
+                    `
                 } 
             })
         }
